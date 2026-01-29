@@ -1,0 +1,8 @@
+#!/bin/bash
+
+SDK_DIR="$(dirname "$0")"
+
+export DYLD_LIBRARY_PATH="${SDK_DIR}/lib"
+export DYLD_FRAMEWORK_PATH="${SDK_DIR}"
+export PYTHONHOME="${SDK_DIR}/Python.framework/Versions/2.7"
+exec "${SDK_DIR}/bin/naoqi-bin" $@

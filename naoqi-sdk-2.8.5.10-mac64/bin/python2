@@ -1,0 +1,10 @@
+#!/bin/bash
+
+this_dir="$(dirname "$0")"
+SDK_DIR="${this_dir}/.."
+
+export DYLD_LIBRARY_PATH="${SDK_DIR}/lib"
+export DYLD_FRAMEWORK_PATH="${SDK_DIR}"
+export PYTHONHOME="${SDK_DIR}/Python.framework/Versions/2.7"
+export PYTHONPATH="${SDK_DIR}/lib"
+"${SDK_DIR}/bin/python2.orig" $@

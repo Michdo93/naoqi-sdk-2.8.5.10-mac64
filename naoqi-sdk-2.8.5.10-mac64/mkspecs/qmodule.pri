@@ -1,0 +1,9 @@
+EXTRA_INCLUDEPATH += /Users/desktop/.local/share/qi/toolchains/master/openssl/include
+EXTRA_LIBDIR += /Users/desktop/.local/share/qi/toolchains/master/openssl/lib
+QT_CPU_FEATURES.x86_64 = cx16 mmx sse sse2 sse3 ssse3
+QT.global_private.enabled_features = alloca_h alloca sse2 dbus gui network qml-debug reduce_exports release_tools sql testlib widgets xml
+QT.global_private.disabled_features = private_tests alloca_malloc_h android-style-assets dbus-linked libudev posix_fallocate reduce_relocations stack-protector-strong system-zlib
+QT_COORD_TYPE = double
+CONFIG += sse2 sse3 ssse3 sse4_1 sse4_2 avx avx2 avx512f avx512bw avx512cd avx512dq avx512er avx512ifma avx512pf avx512vl compile_examples f16c largefile precompile_header
+QT_BUILD_PARTS += tools libs
+QT_HOST_CFLAGS_DBUS += 
